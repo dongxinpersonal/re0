@@ -1,4 +1,8 @@
 v0.3
+————————————————————教程———————————————————
+环境配置：https://www.bilibili.com/video/BV1k34y1Y7xk/?spm_id_from=333.1007.top_right_bar_window_history.content.click
+git和github简易教程：https://www.bilibili.com/video/BV1s3411g7PS/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=49e986340caab1adb676ad93acb411f6
+git学习练习网址：https://learngitbranching.js.org/?locale=zh_CN
 ——————————————————设置git——————————————————
 //设置git的用户名和邮箱
 git config --global user.name "nightstardawn"
@@ -69,6 +73,8 @@ git remote remove <远程库名>
 //向远程库推送代码，并和当前分支关联  
 git push -u <远程库名> <分支名> 
 git push <远程库> <本地分支>:<远程分支>
+//关闭一个PR
+git commit --allow-empty -m "Close#4"
 
 git push #如果本地的版本低于远程库，push默认是推不上去
 git fetch #要想推送成功，必须先确保本地库和远程库的版本一致，fetch它会从远程仓库下载所有代码，但是它不会将代码和当前分支自动合并
